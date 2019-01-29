@@ -1,9 +1,7 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <cmath>
-#include <string>
 #include <iostream>
-using namespace std;
 /*
 * function to find a cosine of angle between vectors
 * from pt0->pt1 and pt0->pt2
@@ -37,9 +35,9 @@ void setLabel(cv::Mat& im, const std::string label, std::vector<cv::Point>& cont
 
 int main()
 {
-	cv::Mat src = cv::imread("shps.jpg");
+	cv::Mat src = cv::imread("images/shps.jpg");
 	//cv::Mat src = cv::imread("F:/ITUNOM 2019/shape_datasets/quarter-circle/4__120.jpg");
-	//cv::Mat src = cv::imread("F:/ITUNOM 2019/old shape datasets/dtsts/quarter-circle/Adsýz.png");
+	//cv::Mat src = cv::imread("F:/ITUNOM 2019/old shape datasets/dtsts/quarter-circle/AdsÃ½z.png");
 
 	if (src.empty())
 		return -1;
@@ -94,8 +92,6 @@ int main()
 				// Get the lowest and the highest cosine
 				double mincos = cos.front();
 				double maxcos = cos.back();
-
-				std::cout << mincos << "_____" << maxcos << std::endl;
 
 				// Use the degrees obtained above and the number of vertices to determine the shape of the contour
 
