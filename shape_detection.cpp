@@ -1,3 +1,13 @@
+/*************************************************************
+*
+*                Developed by Farid Huseynov
+*                     ITUNOM UAV Team
+*           	 All rights reserved © 2019
+*
+**************************************************************/
+
+
+
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <cmath>
